@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anyinsea IBM Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.ico.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="logo">Anyinsea</div>
+    <nav>
+      <ul>
+        <!-- Task 8: Home icon -->
+        <li><a href="#home"><i class="fas fa-home"></i><span>Home</span></a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Home ===== -->
+    <section id="home">
+      <div class="hero">
+        <div>
+          <h1>Welcome to David’s Portfolio</h1>
+          <p>A focused early-career developer dedicated to building clean, responsive, and accessible web experiences.</p>
+        </div>
+        <div>
+          <p><strong>Quick links:</strong></p>
+          <ul>
+            <li><a href="#about">Learn about me</a></li>
+            <li><a href="#projects">Explore my projects</a></li>
+            <li><a href="#recommendations">Read recommendations</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About Me (Task 3) ===== -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <!-- Replace src with unique profile image path -->
+        <img src="images/anyinsea.jpeg" alt="Profile Picture" class="profile-img" />
+        <div class="about-text">
+          <h3>David Longinus</h3>
+          <p>
+            I’m a motivated software developer with 3 years of hands-on experience crafting web applications.
+            I love building responsive interfaces with HTML, CSS, and JavaScript, and I’m energized by translating
+            real-world problems into simple, elegant solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-chip">HTML5</div>
+        <div class="skill-chip">CSS3</div>
+        <div class="skill-chip">JavaScript</div>
+        <div class="skill-chip">Responsive Design</div>
+        <div class="skill-chip">Accessibility</div>
+        <div class="skill-chip">Git & GitHub</div>
+      </div>
+    </section>
+
+    <!-- ===== Projects (Task 5) ===== -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>
+            A responsive personal portfolio built with semantic HTML, modern CSS (Flex/Grid),
+            and vanilla JavaScript. Features smooth scrolling, accessible navigation, and a clean layout.
+          </p>
+          <a href="https://anyinsea1.github.io/project/" target="_blank" rel="noopener">View Project</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>Task Manager App</h3>
+          <p>
+            A lightweight task app enabling users to add, edit, delete, and persist tasks using local storage.
+            Built with JavaScript and styled components for a snappy experience.
+          </p>
+          <a href="#" target="_blank" rel="noopener">View Project</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>Weather Dashboard</h3>
+          <p>
+            A dashboard consuming a public API to display current conditions and a short forecast.
+            Includes city search, basic caching, and responsive cards for mobile users.
+          </p>
+          <a href="#" target="_blank" rel="noopener">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Recommendations (Task 6, 7, 9) ===== -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+
+      <div class="recommendations-container" id="recommendations-list">
+        <!-- Recommendation 1 -->
+        <div class="recommendation-card">
+          <p>
+            "David consistently demonstrates strong problem-solving skills and attention to detail.
+            His ability to deliver projects on time makes him a valuable team member."
+          </p>
+          <h4>- Sarah Lee, Project Manager at TechWorks</h4>
+        </div>
+        <!-- Recommendation 2 -->
+        <div class="recommendation-card">
+          <p>
+            "I was impressed by John's creativity and technical expertise. He built a responsive
+            web application that exceeded client expectations and showcased modern design practices."
+          </p>
+          <h4>- Michael Brown, Senior Developer at CodeCraft</h4>
+        </div>
+        <!-- Recommendation 3 -->
+        <div class="recommendation-card">
+          <p>
+            "David is a quick learner who adapts well to new technologies. His collaborative spirit
+            and communication skills make him an excellent addition to any development team."
+          </p>
+          <h4>- Priya Sharma, Team Lead at Innovate Solutions</h4>
+        </div>
+      </div>
+
+      <!-- Add Recommendation Form (Task 7 & 9) -->
+      <div class="add-recommendation">
+        <h3>Add a Recommendation</h3>
+        <textarea id="recText" rows="4" placeholder="Write your recommendation here..."></textarea>
+        <input id="recAuthor" type="text" placeholder="Your name and role (e.g., Alex Chen, CTO at BrightLabs)"/>
+        <button id="submitRec">Submit</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 David Longinus  — Portfolio
+  </footer>
+</body>
+</html>
